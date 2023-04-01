@@ -4,6 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
     "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +13,8 @@
   "license": "MIT",
   "devDependencies": {
     "commitizen": "^4.3.0",
-    "git-cz": "^4.9.0"
+    "git-cz": "^4.9.0",
+    "typescript": "^5.0.3"
   },
   "config": {
     "commitizen": {
