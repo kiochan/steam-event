@@ -1,2 +1,3 @@
-# steam-event
-Manage event as steam
+# stream-event
+
+Manage event as stream
