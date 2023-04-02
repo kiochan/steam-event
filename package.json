@@ -5,20 +5,33 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "commit": "git-cz",
+    "commit": "pnpm run commit:pre && commit:force",
+    "commit:pre": "pnpm run format && pnpm run lint",
+    "commit:force": "git-cz",
+    "format": "prettier --write \"src/**\"",
+    "lint": "eslint src/** --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
     "commitizen": "^4.3.0",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
     "git-cz": "^4.9.0",
+    "prettier": "^2.8.7",
     "typescript": "^5.0.3"
   },
   "config": {
     "commitizen": {
       "path": "git-cz"
     }
-  }
+  },
+  "dependencies": {}
 }
