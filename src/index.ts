@@ -1,1 +1,1 @@
-export * from './StreamEvent';
+export * from './StreamEvent'
