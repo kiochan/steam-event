@@ -1,0 +1,4 @@
+{
+  "prettier.configPath": "prettier.config.js",
+  "eslint.experimental.useFlatConfig": true
+}
