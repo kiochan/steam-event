@@ -12,5 +12,13 @@ module.exports = {
     project: 'tsconfig.json'
   },
   ignorePatterns: ['node_modules', 'lib'],
-  rules: {}
+  rules: {
+    '@typescript-eslint/consistent-type-imports': [
+      'error',
+      {
+        prefer: 'type-imports',
+        fixStyle: 'separate-type-imports'
+      }
+    ]
+  }
 }
