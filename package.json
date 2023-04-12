@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "commit": "pnpm run commit:pre && commit:force",
+    "commit": "pnpm run commit:pre && pnpm commit:force",
     "commit:pre": "pnpm run format && pnpm run lint",
     "commit:force": "git-cz",
     "format": "prettier --write \"src/**\"",
