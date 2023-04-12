@@ -1,1 +1,1 @@
-export class StreamEvent {}
+export * from './Source'
